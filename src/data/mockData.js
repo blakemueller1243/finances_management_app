@@ -331,164 +331,70 @@ export const mockPieData = [
 
 export const mockLineData = [
   {
-    id: "ebay",
+    id: "Income",
     color: tokens("dark").greenAccent[500],
     data: [
       {
-        x: "plane",
+        x: "Monday",
         y: 101,
       },
       {
-        x: "helicopter",
+        x: "Tuesday",
         y: 75,
       },
       {
-        x: "boat",
+        x: "Wednesday",
         y: 36,
       },
       {
-        x: "train",
-        y: 216,
+        x: "Thursday",
+        y: 176,
       },
       {
-        x: "subway",
+        x: "Friday",
         y: 35,
       },
       {
-        x: "bus",
-        y: 236,
+        x: "Saturday",
+        y: 186,
       },
       {
-        x: "car",
+        x: "Sunday",
         y: 88,
       },
-      {
-        x: "moto",
-        y: 232,
-      },
-      {
-        x: "bicycle",
-        y: 281,
-      },
-      {
-        x: "horse",
-        y: 1,
-      },
-      {
-        x: "skateboard",
-        y: 35,
-      },
-      {
-        x: "others",
-        y: 14,
-      },
     ],
   },
   {
-    id: "mercari",
-    color: tokens("dark").blueAccent[300],
+    id: "Spending",
+    color: tokens("dark").red[500],
     data: [
       {
-        x: "plane",
-        y: 212,
+        x: "Monday",
+        y: 10,
       },
       {
-        x: "helicopter",
-        y: 190,
+        x: "Tuesday",
+        y: 52,
       },
       {
-        x: "boat",
-        y: 270,
+        x: "Wednesday",
+        y: 34,
       },
       {
-        x: "train",
-        y: 9,
+        x: "Thursday",
+        y: 117,
       },
       {
-        x: "subway",
-        y: 75,
+        x: "Friday",
+        y: 28,
       },
       {
-        x: "bus",
-        y: 175,
+        x: "Saturday",
+        y: 171,
       },
       {
-        x: "car",
-        y: 33,
-      },
-      {
-        x: "moto",
-        y: 189,
-      },
-      {
-        x: "bicycle",
-        y: 97,
-      },
-      {
-        x: "horse",
-        y: 87,
-      },
-      {
-        x: "skateboard",
-        y: 299,
-      },
-      {
-        x: "others",
-        y: 251,
-      },
-    ],
-  },
-  {
-    id: "amazon",
-    color: tokens("dark").pinkAccent[200],
-    data: [
-      {
-        x: "plane",
-        y: 191,
-      },
-      {
-        x: "helicopter",
-        y: 136,
-      },
-      {
-        x: "boat",
-        y: 91,
-      },
-      {
-        x: "train",
-        y: 190,
-      },
-      {
-        x: "subway",
-        y: 211,
-      },
-      {
-        x: "bus",
-        y: 152,
-      },
-      {
-        x: "car",
-        y: 189,
-      },
-      {
-        x: "moto",
-        y: 152,
-      },
-      {
-        x: "bicycle",
-        y: 8,
-      },
-      {
-        x: "horse",
-        y: 197,
-      },
-      {
-        x: "skateboard",
-        y: 107,
-      },
-      {
-        x: "others",
-        y: 170,
+        x: "Sunday",
+        y: 184,
       },
     ],
   },
@@ -549,7 +455,7 @@ export const mockCalendarData = [
     "day": "2018-03-04"
   },
   {
-    "value": 3,
+    "value": -3,
     "day": "2018-06-20"
   },
   {
@@ -573,7 +479,7 @@ export const mockCalendarData = [
     "day": "2018-06-05"
   },
   {
-    "value": 197,
+    "value": -197,
     "day": "2017-12-19"
   },
   {
@@ -637,11 +543,11 @@ export const mockCalendarData = [
     "day": "2017-11-14"
   },
   {
-    "value": 296,
+    "value": -296,
     "day": "2017-12-29"
   },
   {
-    "value": 269,
+    "value": -269,
     "day": "2016-05-01"
   },
   {
@@ -649,7 +555,7 @@ export const mockCalendarData = [
     "day": "2015-10-12"
   },
   {
-    "value": 234,
+    "value": -234,
     "day": "2018-07-04"
   },
   {
@@ -761,7 +667,7 @@ export const mockCalendarData = [
     "day": "2017-09-07"
   },
   {
-    "value": 384,
+    "value": -384,
     "day": "2015-10-17"
   },
   {
@@ -769,7 +675,7 @@ export const mockCalendarData = [
     "day": "2016-03-29"
   },
   {
-    "value": 245,
+    "value": -245,
     "day": "2015-10-31"
   },
   {
@@ -797,7 +703,7 @@ export const mockCalendarData = [
     "day": "2016-11-01"
   },
   {
-    "value": 337,
+    "value": -337,
     "day": "2015-07-16"
   },
   {
@@ -805,7 +711,7 @@ export const mockCalendarData = [
     "day": "2015-06-28"
   },
   {
-    "value": 95,
+    "value": -95,
     "day": "2015-08-22"
   },
   {
@@ -857,7 +763,7 @@ export const mockCalendarData = [
     "day": "2016-06-21"
   },
   {
-    "value": 189,
+    "value": -189,
     "day": "2017-06-24"
   },
   {
@@ -901,7 +807,7 @@ export const mockCalendarData = [
     "day": "2017-01-15"
   },
   {
-    "value": 80,
+    "value": -80,
     "day": "2018-08-07"
   },
   {
@@ -977,7 +883,7 @@ export const mockCalendarData = [
     "day": "2015-12-01"
   },
   {
-    "value": 119,
+    "value": -119,
     "day": "2016-02-04"
   },
   {
@@ -2481,7 +2387,7 @@ export const mockCalendarData = [
     "day": "2017-02-11"
   },
   {
-    "value": 4,
+    "value": -4,
     "day": "2015-05-23"
   },
   {
@@ -4653,7 +4559,7 @@ export const mockCalendarData = [
     "day": "2015-07-30"
   },
   {
-    "value": 303,
+    "value": -30,
     "day": "2015-09-03"
   },
   {
@@ -4693,7 +4599,7 @@ export const mockCalendarData = [
     "day": "2017-04-28"
   },
   {
-    "value": 208,
+    "value": 2008,
     "day": "2015-11-15"
   },
   {
@@ -4721,7 +4627,7 @@ export const mockCalendarData = [
     "day": "2017-01-29"
   },
   {
-    "value": 108,
+    "value": -108,
     "day": "2015-06-29"
   },
   {
@@ -4753,7 +4659,7 @@ export const mockCalendarData = [
     "day": "2018-07-08"
   },
   {
-    "value": 280,
+    "value": -280,
     "day": "2015-08-18"
   },
   {
@@ -4793,7 +4699,7 @@ export const mockCalendarData = [
     "day": "2015-06-09"
   },
   {
-    "value": 249,
+    "value": -249,
     "day": "2015-06-14"
   },
   {

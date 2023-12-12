@@ -4,7 +4,7 @@ import { ResponsiveBar } from "@nivo/bar";
 import { tokens } from "../theme";
 import { mockBarData as data } from "../data/mockData";
 
-const BarChart = ({ isDashboard = false }) => {
+const BarChart = ({}) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
@@ -25,7 +25,7 @@ const BarChart = ({ isDashboard = false }) => {
         valueScale={{ type: 'linear' }}
         indexScale={{ type: 'band', round: true }}
         theme={{
-            "background": colors.primary[400],
+            "background": colors.primary[500],
             "textColor": "#333333",
             "fontSize": 11,
             "axis": {
@@ -108,7 +108,7 @@ const BarChart = ({ isDashboard = false }) => {
             },
             "tooltip": {
                 "container": {
-                    "background": colors.grey[100],
+                    "background": colors.blueAccent[100],
                     "color": "#333333",
                     "fontSize": 12
                 },
@@ -143,7 +143,7 @@ const BarChart = ({ isDashboard = false }) => {
             tickSize: 5,
             tickPadding: 5,
             tickRotation: 0,
-            legend: isDashboard ? undefined : 'Date',
+            legend: 'Date',
             legendPosition: 'middle',
             legendOffset: 42,
         }}
@@ -151,9 +151,9 @@ const BarChart = ({ isDashboard = false }) => {
             tickSize: 5,
             tickPadding: 5,
             tickRotation: 0,
-            legend: isDashboard ? undefined : 'Sales',
+            legend: 'Sales',
             legendPosition: 'middle',
-            legendOffset: -44,
+            legendOffset: -48,
         }}
         labelSkipWidth={12}
         labelSkipHeight={12}

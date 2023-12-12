@@ -5,6 +5,7 @@ import { GridStack } from 'gridstack';
 import 'gridstack/dist/gridstack.css';
 import 'gridstack/dist/gridstack-extra.min.css';
 import StatBox from "./StatBox";
+import LineChart from "./LineChart";
 import EmailIcon from "@mui/icons-material/Email";
 import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
@@ -15,10 +16,12 @@ const DashboardGrid = () => {
 
     useEffect(() => {
       const options = {
-          float: false,
+          float: true,
           auto: true,
           cellHeight: 140,
           cellWidth: 280,
+          minRow: 3, // Minimum number of rows
+          column: 12,
       };
       GridStack.init(options);
     }, []);
@@ -50,6 +53,11 @@ const DashboardGrid = () => {
               subtitle="?????"
               icon={<PersonAddIcon sx={{ color: colors.blueAccent[600], fontSize: "26px" }} />}
             />
+          </div>
+        </div>
+        <div className="grid-stack-item" gs-x="1" gs-y="0" gs-width="2" gs-height="1">
+          <div className="grid-stack-item-content">
+            <LineChart/>
           </div>
         </div>
       </div>

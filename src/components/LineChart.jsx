@@ -3,7 +3,7 @@ import { useTheme } from "@mui/material";
 import { tokens } from "../theme";
 import { mockLineData as data } from "../data/mockData";
 
-const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
+const LineChart = ({}) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
@@ -11,7 +11,7 @@ const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
     <ResponsiveLine
       data={data}
       theme={{
-            "background": colors.primary[400],
+            "background": colors.primary[500],
             "textColor": colors.grey[200],
             "fontSize": 17,
             "axis": {
@@ -105,7 +105,7 @@ const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
                 "tableCellValue": {}
             }
         }}
-      colors={isDashboard ? { datum: "color" } : { scheme: "nivo" }} // added
+      colors={{ datum: "color" }}
       margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
       xScale={{ type: "point" }}
       yScale={{
@@ -124,21 +124,21 @@ const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
         tickSize: 0,
         tickPadding: 5,
         tickRotation: 0,
-        legend: isDashboard ? undefined : "transportation", // added
-        legendOffset: 36,
+        legend: "Day",
+        legendOffset: 38,
         legendPosition: "middle",
       }}
       axisLeft={{
         orient: "left",
-        tickValues: 5, // added
+        tickValues: 5,
         tickSize: 3,
         tickPadding: 5,
         tickRotation: 0,
-        legend: isDashboard ? undefined : "count", // added
-        legendOffset: -40,
+        legend: "Amount",
+        legendOffset: -52,
         legendPosition: "middle",
       }}
-      enableGridX={false}
+      enableGridX={true}
       enableGridY={false}
       pointSize={8}
       pointColor={{ theme: "background" }}
